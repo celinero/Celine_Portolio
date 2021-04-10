@@ -1,0 +1,27 @@
+.title--100 {
+  @include title;
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.title--200 {
+  @include title;
+  font-size: 37px;
+  font-weight: 600;
+}
+
+.title--300 {
+  @include title;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.text {
+  font-size: 22px;
+  font-weight: 400;
+  color: $color-primary;
+}
+
+.text-center {
+  text-align: center;
+}
