@@ -83,4 +83,55 @@
   border-radius: 50%;
   overflow: hidden;
 }
+
+.hero {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: calc(100vh - 80px);
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../docs/monstera-leaves.jpeg");
+  background-size: cover;
+  background-color: #cccccc;
+  opacity: 0.65;
+  -webkit-filter: blur(2px);
+          filter: blur(2px);
+}
+
+.hero div {
+  max-width: calc(1160px + 20px + 20px);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+  max-width: 800px;
+  position: relative;
+}
+
+.button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px;
+  color: #1f2e2e;
+  border: 1px solid #006600;
+}
 /*# sourceMappingURL=main.css.map */
