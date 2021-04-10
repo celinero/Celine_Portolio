@@ -1,0 +1,38 @@
+.hero {
+  @include spacing;
+  height: calc(100vh - 80px);
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-image: url("../docs/monstera-leaves.jpeg");
+    background-size: cover;
+    background-color: #cccccc;
+    opacity: 0.65;
+    filter: blur(2px);
+  }
+
+  div {
+    @include container;
+    max-width: 800px;
+    position: relative;
+    
+  }
+}
+
+.button { 
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px;
+  color: $color-primary;
+  border: 1px solid $color-secondary;
+ }
