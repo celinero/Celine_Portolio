@@ -11,3 +11,14 @@
   color: $color-primary;
   text-align: center;
 }
+
+@mixin flex-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+@mixin spacing {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}

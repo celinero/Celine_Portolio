@@ -1,0 +1,25 @@
+.topbar {
+  background-color: $color-tertiary;
+}
+
+.topbar__inner {
+  @include container;
+  @include flex-row;
+  @include spacing;
+}
+
+.topbar__navlink {
+  display: inline-block;
+  text-decoration: none;
+  color: $color-secondary;
+  padding-right: 20px;
+
+  &:hover,
+  &:active,
+  &:focus {
+    text-decoration: underline;
+    text-decoration-color: $color-secondary;
+    text-decoration-thickness: 0.125em;
+    text-underline-offset: 1.5px;
+  }
+}
