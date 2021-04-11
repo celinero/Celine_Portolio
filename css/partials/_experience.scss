@@ -1,0 +1,81 @@
+.experience {
+  @include spacing;
+  background-color: $color-tertiary;
+}
+
+.experience__inner {
+  @include container;
+
+  h2 {
+    padding-bottom: 20px;
+  }
+}
+
+.experience__three-cards { 
+  display: grid;
+  gap: 10px;
+
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+.experience__card {
+  border: 1px solid $color-secondary;
+  border-radius: 8px;
+  box-shadow: 1px 1px;
+  padding: 20px;
+}
+
+.experience__card--skills {
+  @media screen and (min-width: 750px) {
+    grid-column-start: span 2;
+  }
+
+  @media screen and (min-width: 900px) {
+    grid-column-start: span 1;
+  }
+}
+
+
+.experience__card__inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  img {
+    height: 100px;
+    width: auto;
+    padding-right: 20px;
+    padding-bottom: 20px;
+  }
+}
+
+.experience__card__inner2 {
+  padding-top: 20px;
+
+  ul {
+    padding-left: 20px;
+  }
+  
+  // li {
+  //   font-family: "Open Sans", "sans-serif";
+  //   font-size: 20px;
+  // }
+
+}
+
+
+
+// // TABLET responsive
+// @media screen and (min-width: 750px) {
+//   .experience__card { 
+//     max-width: 300px;
+//   }
+// }
