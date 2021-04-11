@@ -11,31 +11,55 @@
   font-family: Montserrat, "Sans Serif";
   color: #1f2e2e;
   text-align: center;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
+}
+
+@media screen and (min-width: 900px) {
+  .title--100 {
+    font-size: 56px;
+  }
 }
 
 .title--200 {
   font-family: Montserrat, "Sans Serif";
   color: #1f2e2e;
   text-align: center;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
+}
+
+@media screen and (min-width: 900px) {
+  .title--200 {
+    font-size: 48px;
+  }
 }
 
 .title--300 {
   font-family: Montserrat, "Sans Serif";
   color: #1f2e2e;
   text-align: center;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 900px) {
+  .title--300 {
+    font-size: 36px;
+  }
 }
 
 .text {
   font-family: "Open Sans", "sans-serif";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   color: #1f2e2e;
+}
+
+@media screen and (min-width: 900px) {
+  .text {
+    font-size: 20px;
+  }
 }
 
 .text-center {
@@ -155,13 +179,24 @@
 }
 
 .experience__three-cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .experience__three-cards {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .experience__three-cards {
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
 }
 
 .experience__card {
@@ -170,7 +205,20 @@
   -webkit-box-shadow: 1px 1px;
           box-shadow: 1px 1px;
   padding: 20px;
-  margin-bottom: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .experience__card--skills {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .experience__card--skills {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+  }
 }
 
 .experience__card__inner {
@@ -199,29 +247,7 @@
   padding-top: 20px;
 }
 
-li {
-  font-family: "Open Sans", "sans-serif";
-  font-size: 20px;
-}
-
-@media screen and (min-width: 750px) {
-  .experience__three-cards {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 10px;
-  }
-  .experience__card {
-    max-width: 350px;
-  }
-}
-
-@media screen and (min-width: 900px) {
-  .experience__three-cards {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 1fr 1fr 1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-  }
+.experience__card__inner2 ul {
+  padding-left: 20px;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,27 +1,44 @@
 .title--100 {
   @include title;
-  font-size: 56px;
+  font-size: 48px;
   font-weight: 700;
+
+  @media screen and (min-width: 900px) {
+    font-size: 56px;
+  }
 }
 
 .title--200 {
   @include title;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 600;
+
+  @media screen and (min-width: 900px) {
+    font-size: 48px;
+  }
 }
 
 .title--300 {
   @include title;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 500;
+
+  @media screen and (min-width: 900px) {
+    font-size: 36px;
+  }
 }
 
 .text {
   font-family: "Open Sans", "sans-serif";
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 400;
   color: $color-primary;
+
+  @media screen and (min-width: 900px) {
+    font-size: 20px;
+  }
 }
+
 
 .text-center {
   text-align: center;
