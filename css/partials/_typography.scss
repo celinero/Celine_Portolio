@@ -6,17 +6,18 @@
 
 .title--200 {
   @include title;
-  font-size: 37px;
+  font-size: 48px;
   font-weight: 600;
 }
 
 .title--300 {
   @include title;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 500;
 }
 
 .text {
+  font-family: "Open Sans", "sans-serif";
   font-size: 22px;
   font-weight: 400;
   color: $color-primary;

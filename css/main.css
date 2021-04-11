@@ -19,7 +19,7 @@
   font-family: Montserrat, "Sans Serif";
   color: #1f2e2e;
   text-align: center;
-  font-size: 37px;
+  font-size: 48px;
   font-weight: 600;
 }
 
@@ -27,11 +27,12 @@
   font-family: Montserrat, "Sans Serif";
   color: #1f2e2e;
   text-align: center;
-  font-size: 24px;
+  font-size: 36px;
   font-weight: 500;
 }
 
 .text {
+  font-family: "Open Sans", "sans-serif";
   font-size: 22px;
   font-weight: 400;
   color: #1f2e2e;
@@ -133,5 +134,94 @@
   padding: 10px;
   color: #1f2e2e;
   border: 1px solid #006600;
+}
+
+.experience {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e6ffe6;
+}
+
+.experience__inner {
+  max-width: calc(1160px + 20px + 20px);
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.experience__inner h2 {
+  padding-bottom: 20px;
+}
+
+.experience__three-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.experience__card {
+  border: 1px solid #006600;
+  border-radius: 8px;
+  -webkit-box-shadow: 1px 1px;
+          box-shadow: 1px 1px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.experience__card__inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 20px;
+}
+
+.experience__card__inner img {
+  height: 100px;
+  width: auto;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+
+.experience__card__inner2 {
+  padding-top: 20px;
+}
+
+li {
+  font-family: "Open Sans", "sans-serif";
+  font-size: 20px;
+}
+
+@media screen and (min-width: 750px) {
+  .experience__three-cards {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 10px;
+  }
+  .experience__card {
+    max-width: 350px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .experience__three-cards {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+  }
 }
 /*# sourceMappingURL=main.css.map */
