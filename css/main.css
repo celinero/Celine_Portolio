@@ -188,6 +188,7 @@
   .experience__three-cards {
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
@@ -195,7 +196,6 @@
   .experience__three-cards {
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
   }
 }
 
@@ -329,64 +329,61 @@
 }
 
 .projects__three-cards {
-  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 10px;
   margin-top: 20px;
 }
 
 @media screen and (min-width: 750px) {
   .projects__three-cards {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
+    gap: 20px;
   }
 }
 
 @media screen and (min-width: 900px) {
   .projects__three-cards {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-columns: 1fr 1fr 1fr;
         grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
   }
 }
 
 .projects__card {
-  margin-bottom: 20px;
-}
-
-.projects__card a {
   display: inline-block;
-  width: 100%;
-  height: auto;
   border: 1px solid #006600;
   border-radius: 8px;
   -webkit-box-shadow: 1px 1px;
           box-shadow: 1px 1px;
+  overflow: hidden;
 }
 
 .projects__card img {
-  display: inline-block;
+  display: block;
   width: 100%;
-  height: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (min-width: 750px) {
   .projects__card--first {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-column: span 2;
         grid-column-start: span 2;
+  }
+  .projects__card--first img {
+    height: 300px;
   }
 }
 
 @media screen and (min-width: 900px) {
   .projects__card--first {
-    display: -ms-grid;
-    display: grid;
     -ms-grid-column: span 1;
         grid-column-start: span 1;
+  }
+  .projects__card--first img {
+    height: 100%;
   }
 }
 /*# sourceMappingURL=main.css.map */
