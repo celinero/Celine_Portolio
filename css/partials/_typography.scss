@@ -13,6 +13,7 @@
   font-size: 36px;
   font-weight: 600;
 
+// Responsive for DESKTOP
   @media screen and (min-width: 900px) {
     font-size: 48px;
   }
@@ -23,6 +24,7 @@
   font-size: 24px;
   font-weight: 500;
 
+  // Responsive for DESKTOP
   @media screen and (min-width: 900px) {
     font-size: 36px;
   }
@@ -34,6 +36,7 @@
   font-weight: 400;
   color: $color-primary;
 
+  // Responsive for DESKTOP
   @media screen and (min-width: 900px) {
     font-size: 20px;
   }
