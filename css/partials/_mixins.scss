@@ -24,5 +24,7 @@
 }
 
 @mixin link {
+  display: block;
   text-decoration: none;
+  color: $color-primary;
 }

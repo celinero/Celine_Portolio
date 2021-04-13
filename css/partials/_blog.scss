@@ -1,6 +1,7 @@
 .blog {
   @include container;
   @include spacing; 
+
 }
 
 .blog-posts {
@@ -22,7 +23,8 @@
 
 .blog__card {
   @include link;
-  display: inline-block;
+
+  position: relative;
   border: 1px solid $color-secondary;
   border-radius: 8px;
   box-shadow: 1px 1px;
@@ -35,6 +37,16 @@
     object-fit: cover;
   }
 }
+
+.blog__img__info {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(209, 224, 224, 0.5);
+  color: $color-primary;
+  padding: 10px;
+}
+
 
 .blog__card--first {
   @media screen and (min-width: 750px) {
@@ -71,8 +83,76 @@
   }
 }
 
-.blog__img__info {
-  background-color: rgba(209, 224, 224, 0.5);
-  color: $color-primary;
+// blog page
+.wrapper {
+  @include container;
+  @include spacing; 
+
+  @media screen and (min-width: 900px) {
+    display: flex;
+  }
+}
+
+.blog-post {
+  @media screen and (min-width: 900px) {
+    width: 75%;
+  }
+}
+
+.blog__two-cards {
+  padding-top: 20px;
+  max-width: 500px;
   margin: 0 auto;
+
+  p {
+    padding-bottom: 20px;
+  }  
+
+  img {
+    display: block;
+    width: 100%;
+    border-radius: 8px;
+    margin: 0 auto;
+
+    // DESKTOP
+    @media screen and (min-width: 900px) {
+      width: 400px;
+      height: 400px;
+    }
+  }
+
+  // DESKTOP
+  @media screen and (min-width: 900px) {
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+  }
+}
+  
+.blog__content {
+  padding: 10px 0;
+  margin-top: 20px;
+
+  // DESKTOP
+  @media screen and (min-width: 900px) {
+    margin-left: 20px;
+  }
+}
+
+.sidebar {
+  display: none;
+ 
+
+  a {
+    @include link;
+
+    padding-top: 10px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: 900px) {
+    display: block;
+    width: 25%;
+    margin-left: 20px;
+  }
 }
