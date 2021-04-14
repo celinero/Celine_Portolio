@@ -22,3 +22,20 @@
   padding-top: 30px;
   padding-bottom: 30px;
 }
+
+@mixin link {
+  display: block;
+  text-decoration: none;
+  color: $color-primary;
+}
+@mixin background-img {
+  content: "";
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-image: url("../docs/monstera-leaves.jpeg");
+  background-size: cover;
+  background-color: #cccccc;
+  opacity: 0.65;
+  filter: blur(2px);
+}

@@ -8,15 +8,7 @@
 
 
   &::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background-image: url("../docs/monstera-leaves.jpeg");
-    background-size: cover;
-    background-color: #cccccc;
-    opacity: 0.65;
-    filter: blur(2px);
+    @include background-img;
   }
 
   div {
