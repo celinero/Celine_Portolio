@@ -72,6 +72,7 @@
 
 .topbar__inner {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -142,6 +143,7 @@
 
 .hero div {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -150,7 +152,7 @@
   position: relative;
 }
 
-.button {
+.hero a {
   display: inline-block;
   text-decoration: none;
   background-color: white;
@@ -158,6 +160,12 @@
   padding: 10px;
   color: #1f2e2e;
   border: 1px solid #006600;
+  border-radius: 4px;
+}
+
+.hero a:hover {
+  background-color: #006600;
+  color: white;
 }
 
 .experience {
@@ -168,6 +176,7 @@
 
 .experience__inner {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -253,6 +262,7 @@
 
 .about {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -322,6 +332,7 @@
 
 .projects__inner {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -389,6 +400,7 @@
 
 .blog {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -512,6 +524,7 @@
 
 .wrapper--inner {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -571,6 +584,7 @@
 
 .sidebar {
   max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
   margin: 0 auto;
   padding-left: 20px;
   padding-right: 20px;
@@ -608,5 +622,129 @@
   .sidebar {
     display: block;
   }
+}
+
+.contact {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  background-color: #e6ffe6;
+}
+
+.contact__inner {
+  max-width: calc(1160px + 20px + 20px);
+  min-width: 300px;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
+}
+
+.contact__inner p {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.form {
+  padding-top: 20px;
+}
+
+.form__wrapper {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 10px;
+}
+
+@media screen and (min-width: 750px) {
+  .form__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .form__wrapper {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .form__name,
+  .form__email {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+  }
+}
+
+.form__name input,
+.form__email input {
+  padding: 10px;
+  border: 1px solid #006600;
+  border-radius: 4px;
+  width: 100%;
+}
+
+@media screen and (min-width: 900px) {
+  .form__name {
+    -ms-grid-column: span 1;
+        grid-column-start: span 1;
+    -ms-grid-row: span 1;
+        grid-row-start: span 1;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .form__email {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2 / span 1;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .form__message {
+    -ms-grid-column: span 2;
+        grid-column-start: span 2;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .form__message {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / span 1;
+    grid-row: span 2;
+  }
+}
+
+textarea {
+  height: 105px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form__button {
+  display: inline-block;
+  text-decoration: none;
+  background-color: white;
+  margin-top: 30px;
+  padding: 10px;
+  color: #1f2e2e;
+  border: 1px solid #006600;
+  border-radius: 4px;
+  width: 100px;
+  margin: 20px auto;
+}
+
+.form__button:hover {
+  background-color: #006600;
+  color: white;
 }
 /*# sourceMappingURL=main.css.map */

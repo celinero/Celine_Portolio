@@ -1,0 +1,93 @@
+.contact {
+  @include spacing;
+  background-color: $color-tertiary;
+}
+
+.contact__inner {
+  @include container;
+
+  p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+  }
+}
+
+.form {
+  padding-top: 20px;
+}
+
+.form__wrapper {
+  display: grid;
+  grid-gap: 10px;
+
+  // TABLET
+  @media screen and (min-width: 750px) {
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: 900px) {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+.form__name,
+.form__email  {
+ // TABLET
+ @media screen and (min-width: 750px) {
+  grid-column-start: span 1;
+  }
+
+  input {
+    padding: 10px;
+    border: 1px solid $color-secondary;
+    border-radius: 4px;
+    width: 100%;
+  }
+}
+
+.form__name {
+  // DESKTOP
+  @media screen and (min-width: 900px) {
+    grid-column-start: span 1;
+    grid-row-start: span 1;
+  }
+}
+
+.form__email  {
+  // DESKTOP
+  @media screen and (min-width: 900px) {
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+  }
+}
+
+ 
+.form__message {
+  // TABLET
+  @media screen and (min-width: 750px) {
+    grid-column-start: span 2;
+  }
+
+  // DESKTOP
+  @media screen and (min-width: 900px) {
+    grid-column: 2 / span 1;
+    grid-row: span 2;
+  }
+}
+
+textarea {
+  height: 105px;
+  width: 100%;
+  padding: 10px;
+}
+
+.form__button {
+  @include button;
+  width: 100px;
+  margin: 20px auto;
+}
