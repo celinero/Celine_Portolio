@@ -1,24 +1,30 @@
 .topbar {
-  background-color: $color-tertiary;
+  background-color: $color-secondary;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .topbar__inner {
   @include container;
-  @include flex-row;
-  @include spacing;
+
+  // TABLET
+  @media screen and (min-width: 750px) {
+    @include flex-row;
+  }
 }
 
 .topbar__navlink {
   display: inline-block;
   text-decoration: none;
-  color: $color-secondary;
+  color: $color-text;
+  font-size: 1.25rem;
   padding-right: 20px;
 
   &:hover,
   &:active,
   &:focus {
     text-decoration: underline;
-    text-decoration-color: $color-secondary;
+    text-decoration-color: $color-text;
     text-decoration-thickness: 0.125em;
     text-underline-offset: 1.5px;
   }
@@ -27,4 +33,5 @@
 .topbar__logo {
   border-radius: 50%;
   overflow: hidden;
+  width: 75px;
 }

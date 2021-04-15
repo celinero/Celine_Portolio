@@ -67,7 +67,9 @@
 }
 
 .topbar {
-  background-color: #a3c2c2;
+  background-color: #334d4d;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .topbar__inner {
@@ -77,30 +79,34 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+}
+
+@media screen and (min-width: 750px) {
+  .topbar__inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .topbar__navlink {
   display: inline-block;
   text-decoration: none;
-  color: #334d4d;
+  color: #fff;
+  font-size: 1.25rem;
   padding-right: 20px;
 }
 
 .topbar__navlink:hover, .topbar__navlink:active, .topbar__navlink:focus {
   text-decoration: underline;
-  -webkit-text-decoration-color: #334d4d;
-          text-decoration-color: #334d4d;
+  -webkit-text-decoration-color: #fff;
+          text-decoration-color: #fff;
   text-decoration-thickness: 0.125em;
   text-underline-offset: 1.5px;
 }
@@ -108,6 +114,7 @@
 .topbar__logo {
   border-radius: 50%;
   overflow: hidden;
+  width: 75px;
 }
 
 .hero {
