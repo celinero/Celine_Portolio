@@ -13,7 +13,7 @@
   font-size: 36px;
   font-weight: 600;
 
-// Responsive for DESKTOP
+  // Responsive for DESKTOP
   @media screen and (min-width: 900px) {
     font-size: 48px;
   }
@@ -34,14 +34,13 @@
   font-family: "Open Sans", "sans-serif";
   font-size: 18px;
   font-weight: 400;
-  color: $color-primary;
+  color: $color-text;
 
   // Responsive for DESKTOP
   @media screen and (min-width: 900px) {
     font-size: 20px;
   }
 }
-
 
 .text-center {
   text-align: center;
