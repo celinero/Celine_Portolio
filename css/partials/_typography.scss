@@ -1,8 +1,9 @@
 .title--100 {
   @include title;
-  font-size: 48px;
+  font-size: 36px;
   font-weight: 700;
 
+  // Responsive for DESKTOP
   @media screen and (min-width: 900px) {
     font-size: 56px;
   }
@@ -10,7 +11,7 @@
 
 .title--200 {
   @include title;
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 600;
 
   // Responsive for DESKTOP
@@ -21,7 +22,7 @@
 
 .title--300 {
   @include title;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 500;
 
   // Responsive for DESKTOP
@@ -32,7 +33,7 @@
 
 .text {
   font-family: "Open Sans", "sans-serif";
-  font-size: 18px;
+  font-size: 14px;
   font-weight: 400;
   color: $color-text;
 

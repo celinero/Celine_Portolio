@@ -1,11 +1,16 @@
 .hero {
   @include spacing;
-  height: calc(100vh - 80px);
+  height: 100vh;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
 
+  // TABLET
+  @media screen and (min-width: 750px) {
+    height: calc(100vh - 80px);
+  }
 
   &::before {
     @include background-img;
@@ -15,7 +20,6 @@
     @include container;
     max-width: 800px;
     position: relative;
-    
   }
 
   a {
