@@ -79,13 +79,21 @@
   padding-left: 20px;
   padding-right: 20px;
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media screen and (min-width: 750px) {
   .topbar__inner {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -95,12 +103,38 @@
   }
 }
 
+.topbar__logo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 75px;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar {
+    padding-left: 20px;
+  }
+}
+
 .topbar__navlink {
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-decoration: none;
   color: #fff;
-  font-size: 1.25rem;
-  padding-right: 20px;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 750px) {
+  .topbar__navlink {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding-right: 20px;
+    padding-top: 0;
+  }
 }
 
 .topbar__navlink:hover, .topbar__navlink:active, .topbar__navlink:focus {
@@ -109,12 +143,6 @@
           text-decoration-color: #fff;
   text-decoration-thickness: 0.125em;
   text-underline-offset: 1.5px;
-}
-
-.topbar__logo {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 75px;
 }
 
 .hero {

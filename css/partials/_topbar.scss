@@ -6,19 +6,44 @@
 
 .topbar__inner {
   @include container;
+  display: flex;
+  flex-direction: column;
 
   // TABLET
   @media screen and (min-width: 750px) {
-    @include flex-row;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.topbar__logo {
+  border-radius: 50%;
+  overflow: hidden;
+  width: 75px;
+}
+
+.navbar {
+  // TABLET
+  @media screen and (min-width: 750px) {
+    padding-left: 20px;
   }
 }
 
 .topbar__navlink {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   text-decoration: none;
   color: $color-text;
-  font-size: 1.25rem;
-  padding-right: 20px;
+  padding-top: 30px;
+
+  // TABLET
+  @media screen and (min-width: 750px) {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding-right: 20px;
+    padding-top: 0;
+  }
 
   &:hover,
   &:active,
@@ -28,10 +53,4 @@
     text-decoration-thickness: 0.125em;
     text-underline-offset: 1.5px;
   }
-}
-
-.topbar__logo {
-  border-radius: 50%;
-  overflow: hidden;
-  width: 75px;
 }
