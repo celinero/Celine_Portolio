@@ -67,7 +67,9 @@
 }
 
 .topbar {
-  background-color: #a3c2c2;
+  background-color: #334d4d;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .topbar__inner {
@@ -80,34 +82,67 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
-.topbar__navlink {
-  display: inline-block;
-  text-decoration: none;
-  color: #334d4d;
-  padding-right: 20px;
-}
-
-.topbar__navlink:hover, .topbar__navlink:active, .topbar__navlink:focus {
-  text-decoration: underline;
-  -webkit-text-decoration-color: #334d4d;
-          text-decoration-color: #334d4d;
-  text-decoration-thickness: 0.125em;
-  text-underline-offset: 1.5px;
+@media screen and (min-width: 750px) {
+  .topbar__inner {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .topbar__logo {
   border-radius: 50%;
   overflow: hidden;
+  width: 75px;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar {
+    padding-left: 20px;
+  }
+}
+
+.topbar__navlink {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-decoration: none;
+  color: #fff;
+  padding-top: 30px;
+}
+
+@media screen and (min-width: 750px) {
+  .topbar__navlink {
+    display: inline-block;
+    font-size: 1.25rem;
+    padding-right: 20px;
+    padding-top: 0;
+  }
+}
+
+.topbar__navlink:hover, .topbar__navlink:active, .topbar__navlink:focus {
+  text-decoration: underline;
+  -webkit-text-decoration-color: #fff;
+          text-decoration-color: #fff;
+  text-decoration-thickness: 0.125em;
+  text-underline-offset: 1.5px;
 }
 
 .hero {
