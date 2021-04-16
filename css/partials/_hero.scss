@@ -13,16 +13,7 @@
   }
 
   &::before {
-    content: "";
-    position: absolute;
-    width: 110%;
-    height: 110%;
-    background-image: url("../docs/monstera-background.jpeg");
-    background-size: cover;
-    background-color: $color-tertiary;
-    background-position: center center;
-    opacity: 0.65;
-    filter: blur(4px) grayscale(60%);
+    @include background-img;
   }
 
   div {
