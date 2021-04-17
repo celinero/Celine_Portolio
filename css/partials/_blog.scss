@@ -79,8 +79,8 @@
   }
 }
 
-// BLOG PAGES
-.wrapper {
+//  ************ BLOG PAGES *****************
+.blog-page {
   @include spacing;
   position: relative;
 
@@ -92,15 +92,15 @@
   }
 }
 
-.wrapper--inner {
+.blog-page__wrapper {
   @include container;
 
   // DESKTOP
   @media screen and (min-width: 900px) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    // grid-template-rows: repeat(12, 1fr);
     grid-gap: 20px;
+    align-items: start;
   }
 }
 
@@ -111,17 +111,17 @@
     background-color: white;
     border-radius: 8px;
     z-index: 2;
-    grid-column: span 9;
-    grid-row: span 12;
+    grid-column: span 8;
   }
 }
 
-.blog__two-cards {
+.blog-post__inner {
   padding-top: 20px;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 
   p {
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 
@@ -133,7 +133,7 @@
 
     // DESKTOP
     @media screen and (min-width: 900px) {
-      width: 600px;
+      width: 500px;
       height: 500px;
     }
   }
@@ -152,14 +152,7 @@
 }
 
 .sidebar {
-  @include container;
-  @include spacing;
   display: none;
-  z-index: 2;
-  background-color: white;
-  border-radius: 8px;
-  grid-column: span 3;
-  grid-row: span 3;
 
   h3 {
     margin-bottom: 10px;
@@ -181,6 +174,14 @@
 
   // DESKTOP
   @media screen and (min-width: 900px) {
+    @include spacing;
+    position: relative;
     display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+    background-color: white;
+    border-radius: 8px;
+    grid-column: span 4;
   }
 }
