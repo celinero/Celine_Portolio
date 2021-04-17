@@ -8,21 +8,30 @@
   <title>Portfolio</title>
 </head>
 <body>
+  <!-- TOPBAR COMPONENT -->
   <header class="topbar">
     <div class="topbar__inner">
-      <img class="topbar__logo" src="http://placekitten.com/g/75/75" alt="celine's logo"/>
+      <!-- LOGO -->
+      <img
+        class="topbar__logo"
+        src="http://placekitten.com/g/75/75"
+        alt="celine's logo"
+      />
+      <!-- NAVIGATION BAR -->
       <div class="navbar">
         <a href="index.html" class="topbar__navlink">Home</a>
-        <a href="index.html#experience" class="topbar__navlink">Experience</a>
-        <a href="index.html#about" class="topbar__navlink">About</a>
-        <a href="index.html#blog" class="topbar__navlink">Blog</a>
-        <a href="index.html#contact" class="topbar__navlink">Contact</a>
+        <a href="#experience" class="topbar__navlink">Experience</a>
+        <a href="#about" class="topbar__navlink">About</a>
+        <a href="#projects" class="topbar__navlink">Projects</a>
+        <a href="#blog" class="topbar__navlink">Blog</a>
+        <a href="#contact" class="topbar__navlink">Contact</a>
       </div>
     </div>
   </header>
-  <div class="wrapper">
+ 
+  <main class="wrapper">
     <div class="wrapper--inner">
-      <main class="blog-post">
+      <div class="blog-post">
         <h1 class="title--200">Blog post one</h1>
         <div class="blog__two-cards">
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam praesentium architecto repudiandae iusto accusantium provident, voluptas inventore doloremque odio numquam.</p>
@@ -32,7 +41,7 @@
             <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas vel eligendi, tempora saepe laborum eius obcaecati. Delectus quam iure ea excepturi, earum accusantium doloribus ad accusamus iusto. Nobis corrupti pariatur possimus assumenda ab? Similique dolorum neque delectus error accusamus doloremque laboriosam explicabo nesciunt! Architecto voluptas rerum illo, aperiam quis deserunt!</p>
           </div>
         </div>
-      </main>
+      </div>
       <aside class="sidebar">
         <h3 class="title--300">The last articles</h2>
         <a href="blog-two.html">Blog post two</a>
@@ -41,6 +50,6 @@
         <a href="blog-five.html">Blog post five</a>
       </aside>
     </div>
-  </div>
+  </main>
 </body>
 </html>

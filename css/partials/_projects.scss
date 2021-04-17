@@ -32,15 +32,7 @@
 
 .projects__card {
   @include link;
-
-  position: relative;
-  border: 1px solid $color-secondary;
-  border-radius: 8px;
-  box-shadow: 1px 1px;
-  overflow: hidden;
-  min-width: 260px;
-  max-width: 500px;
-  margin: 0 auto;
+  @include card;
 
   // TABLET version
   @media screen and (min-width: 750px) {
@@ -60,7 +52,8 @@
     }
   }
 
-  &:hover {
+  &:hover .overlay {
+    opacity: 0.9;
   }
 }
 
@@ -85,37 +78,10 @@
   }
 }
 
-.projects__img__info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(209, 224, 224, 0.8);
-  color: $color-primary;
-  padding: 10px;
-}
-
 .overlay {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  transition: 0.5s ease;
-  background-color: $color-secondary;
-}
-
-.projects__card:hover .overlay {
-  opacity: 0.9;
+  @include overlay;
 }
 
 .overlay__content {
-  color: $color-link;
-  font-size: 24px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  @include overlay__content;
 }
