@@ -1,7 +1,14 @@
+// ABOUT ME COMPONENT
 .about {
   @include container;
-  @include spacing; 
+  @include spacing;
 
+  // DESKTOP version
+  @media screen and (min-width: 900px) {
+    @include spacing--lg;
+  }
+
+  // IMAGE
   img {
     display: block;
     width: 200px;
@@ -10,34 +17,34 @@
     border-radius: 50%;
     margin: 0 auto;
 
-  // DESKTOP
+    // DESKTOP version
     @media screen and (min-width: 900px) {
-      width: 300px;
-      height: 300px;
+      width: 250px;
+      height: 250px;
     }
-
   }
 }
 
 .about__two-cards {
   padding-top: 20px;
 
-// DESKTOP
+  // DESKTOP version
   @media screen and (min-width: 900px) {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 }
-
+// CONTENT
 .about__content {
-  max-width: 500px ;
+  max-width: 500px;
   margin: 0 auto;
   border: 1px solid $color-secondary;
   border-radius: 8px;
   box-shadow: 1px 1px;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 10px;
   background-color: $color-tertiary;
 
   // DESKTOP

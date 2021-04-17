@@ -238,6 +238,13 @@
   background-color: #a3c2c2;
 }
 
+@media screen and (min-width: 900px) {
+  .experience {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .experience__inner {
   max-width: calc(1160px + 20px + 20px);
   min-width: 300px;
@@ -364,6 +371,13 @@
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 900px) {
+  .about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
 .about img {
   display: block;
   width: 200px;
@@ -376,8 +390,8 @@
 
 @media screen and (min-width: 900px) {
   .about img {
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
   }
 }
 
@@ -408,6 +422,7 @@
           box-shadow: 1px 1px;
   padding: 10px;
   margin-top: 20px;
+  margin-bottom: 10px;
   background-color: #a3c2c2;
 }
 
