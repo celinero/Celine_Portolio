@@ -1,6 +1,12 @@
+// Experience component
 .experience {
   @include spacing;
   background-color: $color-tertiary;
+
+  // DESKTOP version
+  @media screen and (min-width: 900px) {
+    @include spacing--lg;
+  }
 }
 
 .experience__inner {

@@ -24,6 +24,11 @@
   padding-bottom: 30px;
 }
 
+@mixin spacing--lg {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
 @mixin link {
   display: block;
   text-decoration: none;
