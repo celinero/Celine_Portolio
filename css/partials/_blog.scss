@@ -1,7 +1,10 @@
 .blog {
   @include container;
-  @include spacing; 
+  @include spacing;
 
+  @media screen and (min-width: 900px) {
+    @include spacing--lg;
+  }
 }
 
 .blog-posts {
@@ -20,7 +23,6 @@
   }
 }
 
-
 .blog__card {
   @include link;
 
@@ -29,7 +31,7 @@
   border-radius: 8px;
   box-shadow: 1px 1px;
   overflow: hidden;
-  
+
   img {
     display: block;
     width: 100%;
@@ -47,11 +49,10 @@
   padding: 10px;
 }
 
-
 .blog__card--first {
   @media screen and (min-width: 750px) {
     grid-column-start: span 2;
-   
+
     img {
       height: 300px;
     }
@@ -69,12 +70,11 @@
 .blog__card--row1 {
   @media screen and (min-width: 900px) {
     grid-column-start: span 6;
-    
+
     img {
       height: 300px;
     }
   }
-
 }
 
 .blog__card--row2 {
@@ -85,11 +85,10 @@
 
 // BLOG PAGES
 .wrapper {
-  @include spacing; 
+  @include spacing;
   position: relative;
- 
+
   @media screen and (min-width: 900px) {
-    
     &::before {
       @include background-img;
       z-index: 1;
@@ -110,7 +109,6 @@
 }
 
 .blog-post {
-
   // DESKTOP
   @media screen and (min-width: 900px) {
     @include spacing;
@@ -129,7 +127,7 @@
 
   p {
     padding-bottom: 20px;
-  }  
+  }
 
   img {
     display: block;
@@ -151,7 +149,7 @@
     // align-items: center;
   }
 }
-  
+
 .blog__content {
   padding: 10px 0;
   margin-top: 20px;
@@ -166,9 +164,8 @@
   border-radius: 8px;
   grid-column: span 3;
   grid-row: span 3;
- 
 
-  h3{
+  h3 {
     margin-bottom: 10px;
   }
 
