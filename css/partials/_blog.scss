@@ -8,10 +8,10 @@
 }
 
 .blog-posts {
-  padding: 20px;
   display: grid;
   gap: 10px;
   margin-top: 20px;
+  padding: 20px 0;
 
   @media screen and (min-width: 750px) {
     grid-template-columns: 1fr 1fr;
@@ -25,28 +25,24 @@
 
 .blog__card {
   @include link;
+  @include card;
 
-  position: relative;
-  border: 1px solid $color-secondary;
-  border-radius: 8px;
-  box-shadow: 1px 1px;
-  overflow: hidden;
+  // TABLET version
+  @media screen and (min-width: 750px) {
+    margin: 0;
+    max-width: 100%;
+  }
 
   img {
     display: block;
     width: 100%;
-    height: 100%;
+    max-height: 500px;
     object-fit: cover;
   }
-}
 
-.blog__img__info {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  background-color: rgba(209, 224, 224, 0.5);
-  color: $color-primary;
-  padding: 10px;
+  &:hover .overlay {
+    opacity: 0.9;
+  }
 }
 
 .blog__card--first {
@@ -83,10 +79,10 @@
   }
 }
 
-// BLOG PAGES
-.wrapper {
-  @include spacing;
+//  ************ BLOG PAGES *****************
+.blog-page {
   position: relative;
+  overflow: hidden;
 
   @media screen and (min-width: 900px) {
     &::before {
@@ -96,15 +92,16 @@
   }
 }
 
-.wrapper--inner {
+.blog-page__wrapper {
+  @include spacing;
   @include container;
 
   // DESKTOP
   @media screen and (min-width: 900px) {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    // grid-template-rows: repeat(12, 1fr);
     grid-gap: 20px;
+    align-items: start;
   }
 }
 
@@ -115,17 +112,17 @@
     background-color: white;
     border-radius: 8px;
     z-index: 2;
-    grid-column: span 9;
-    grid-row: span 12;
+    grid-column: span 8;
   }
 }
 
-.blog__two-cards {
+.blog-post__inner {
   padding-top: 20px;
-  max-width: 600px;
+  max-width: 500px;
   margin: 0 auto;
 
   p {
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 
@@ -137,7 +134,7 @@
 
     // DESKTOP
     @media screen and (min-width: 900px) {
-      width: 600px;
+      width: 500px;
       height: 500px;
     }
   }
@@ -156,14 +153,7 @@
 }
 
 .sidebar {
-  @include container;
-  @include spacing;
   display: none;
-  z-index: 2;
-  background-color: white;
-  border-radius: 8px;
-  grid-column: span 3;
-  grid-row: span 3;
 
   h3 {
     margin-bottom: 10px;
@@ -185,6 +175,14 @@
 
   // DESKTOP
   @media screen and (min-width: 900px) {
+    @include spacing;
+    position: relative;
     display: block;
+    padding-left: 20px;
+    padding-right: 20px;
+    z-index: 2;
+    background-color: white;
+    border-radius: 8px;
+    grid-column: span 4;
   }
 }
