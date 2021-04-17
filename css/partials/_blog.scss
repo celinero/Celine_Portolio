@@ -81,8 +81,8 @@
 
 //  ************ BLOG PAGES *****************
 .blog-page {
-  @include spacing;
   position: relative;
+  overflow: hidden;
 
   @media screen and (min-width: 900px) {
     &::before {
@@ -93,6 +93,7 @@
 }
 
 .blog-page__wrapper {
+  @include spacing;
   @include container;
 
   // DESKTOP

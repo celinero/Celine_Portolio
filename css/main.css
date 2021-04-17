@@ -683,9 +683,8 @@
 }
 
 .blog-page {
-  padding-top: 30px;
-  padding-bottom: 30px;
   position: relative;
+  overflow: hidden;
 }
 
 @media screen and (min-width: 900px) {
@@ -706,6 +705,8 @@
 }
 
 .blog-page__wrapper {
+  padding-top: 30px;
+  padding-bottom: 30px;
   max-width: calc(1160px + 20px + 20px);
   margin: 0 auto;
   padding-left: 20px;
