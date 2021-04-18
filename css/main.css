@@ -116,10 +116,60 @@
   }
 }
 
+.topbar__logo-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .topbar__logo {
   border-radius: 50%;
   overflow: hidden;
   width: 75px;
+}
+
+.topbar__menu {
+  display: inline-block;
+  text-decoration: none;
+  background-color: #334d4d;
+  margin-top: 30px;
+  padding: 10px;
+  color: #fff;
+  border: 1px solid #334d4d;
+  border-radius: 4px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
+  -webkit-box-shadow: 0 0.7em #1f2e2e;
+          box-shadow: 0 0.7em #1f2e2e;
+  cursor: pointer;
+  background-color: #a3c2c2;
+  color: #1f2e2e;
+  margin-top: 0;
+}
+
+.topbar__menu:hover {
+  background-color: #fff;
+  color: #1f2e2e;
+}
+
+.topbar__menu:active {
+  top: 0.4em;
+  -webkit-box-shadow: 0 0.5em #1f2e2e;
+          box-shadow: 0 0.5em #1f2e2e;
+}
+
+@media screen and (min-width: 750px) {
+  .topbar__menu {
+    display: none;
+  }
 }
 
 .navbar {
@@ -145,11 +195,27 @@
   }
 }
 
+.navbar--hidden {
+  display: none;
+}
+
+@media screen and (min-width: 750px) {
+  .navbar--hidden {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
 .topbar__navlink {
   text-decoration: none;
   color: #fff;
   padding-top: 15px;
   padding-bottom: 15px;
+}
+
+.topbar__navlink:first-child {
+  margin-top: 15px;
 }
 
 @media screen and (min-width: 750px) {
@@ -158,6 +224,9 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 0;
+  }
+  .topbar__navlink:first-child {
+    margin-top: 0;
   }
 }
 
@@ -231,6 +300,7 @@
   transition: all 300ms ease-in-out;
   -webkit-box-shadow: 0 0.7em #1f2e2e;
           box-shadow: 0 0.7em #1f2e2e;
+  cursor: pointer;
 }
 
 .hero a:hover {
@@ -284,6 +354,7 @@
   transition: all 300ms ease-in-out;
   -webkit-box-shadow: 0 0.7em #1f2e2e;
           box-shadow: 0 0.7em #1f2e2e;
+  cursor: pointer;
   margin: 20px;
 }
 
@@ -856,6 +927,7 @@
   transition: all 300ms ease-in-out;
   -webkit-box-shadow: 0 0.7em #1f2e2e;
           box-shadow: 0 0.7em #1f2e2e;
+  cursor: pointer;
   width: 100px;
   margin: 20px auto;
 }
