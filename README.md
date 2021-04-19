@@ -2,8 +2,8 @@
 
 # My Portfolio
 
-[My portfolio] (http link)
-[My GitHub repo] (https://github.com/celinero/Celineroure__T1A2.git)
+[My portfolio](https://celine-roure-portfolio.netlify.app/)
+[My GitHub repo](https://github.com/celinero/Celineroure__T1A2.git)
 
 ## Description
 
@@ -32,6 +32,8 @@ Then five pages for the blog posts with two features:
 2. Sidebar (only visible in Desktop view)
 
 ### Sitemap
+
+[My sitemap](https://www.xml-sitemaps.com/download/celine-roure-portfolio.netlify.app-7483edba5/sitemap.xml?view=1)
 
 
 
