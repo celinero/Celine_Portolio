@@ -80,6 +80,7 @@
 }
 
 //  ************ BLOG PAGES *****************
+
 .blog-page {
   position: relative;
   overflow: hidden;
@@ -126,11 +127,17 @@
     padding-bottom: 20px;
   }
 
+  p:last-child {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
   img {
     display: block;
     width: 100%;
     border-radius: 8px;
     margin: 0 auto;
+    background-color: white;
 
     // DESKTOP
     @media screen and (min-width: 900px) {
@@ -138,18 +145,6 @@
       height: 500px;
     }
   }
-
-  // DESKTOP
-  @media screen and (min-width: 900px) {
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
-  }
-}
-
-.blog__content {
-  padding: 10px 0;
-  margin-top: 20px;
 }
 
 .sidebar {
