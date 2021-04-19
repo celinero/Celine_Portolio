@@ -1,0 +1,404 @@
+commit 4555307901f2ee1dfc46bd7bc28527687a62097d
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 19 14:13:12 2021 +1000
+
+    start the readme file
+
+commit 429edabf12ac4f6cd86d6343b453c9ee76131c45
+Merge: 0fb6f6d 143b4cc
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Mon Apr 19 11:47:14 2021 +1000
+
+    Merge pull request #19 from celinero/update/blog
+    
+    update paddings and add hamburger menu in blog pages + add a new scre…
+
+commit 143b4cc25240c964fc63b2c3b6f092415a2c6ea9
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 19 11:46:10 2021 +1000
+
+    update paddings and add hamburger menu in blog pages + add a new screeshot of the trello board
+
+commit 0fb6f6d4340465907ad0b2f3113742f7c74b98f4
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 19 10:23:02 2021 +1000
+
+    update my blog pages and some features in home page for the wireframe
+
+commit dc036df1cfd231c3dcd5892442a2c098787eabb8
+Merge: e09b9ea b84b1c5
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sun Apr 18 22:19:46 2021 +1000
+
+    Merge pull request #18 from celinero/update/header
+    
+    create a hamburger menu in javascript + update mixin button + add a s…
+
+commit b84b1c56797c563884c637dcfde38f0bd7df0612
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sun Apr 18 22:19:02 2021 +1000
+
+    create a hamburger menu in javascript + update mixin button + add a screenshot of my trello board
+
+commit e09b9ea669e819fb3d22396a72e119238710c63a
+Merge: 314d362 2de733a
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sun Apr 18 21:29:15 2021 +1000
+
+    Merge pull request #17 from celinero/fix/footer
+    
+    update footer component, add an hover on links
+
+commit 2de733a0fc190b260a5fc70bab288c660f509994
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sun Apr 18 21:28:24 2021 +1000
+
+    update footer component, add an hover on links
+
+commit 314d362670dc2792c68e67362d1ec0299c1326a8
+Merge: cf3ae9d 757e401
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sat Apr 17 21:55:49 2021 +1000
+
+    Merge pull request #16 from celinero/fix/blog
+    
+    Fix/blog
+
+commit 757e4013b44969eac148b43fdebada0aefc27126
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 17 21:48:10 2021 +1000
+
+    fix background issue on blog pages
+
+commit 63ff8d4d2265156ebbc2e3483c5f8ed7c0e639df
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 17 21:35:26 2021 +1000
+
+    update blog pages: add projects in navbar + add footer + add date published + fix css
+
+commit ffc6ab29fcf3a73604a5cab9e0ceaafd3faca4db
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 17 16:10:42 2021 +1000
+
+    update size of blog image and padding left-right in mobile version on index.html + add an overlay on hover instead of information at the bottom of the card + make it a mixin as I use it in differents components
+
+commit cf3ae9db0c76fcab127ed705152a55784a7c96da
+Merge: 692a954 a1dbb09
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sat Apr 17 14:08:59 2021 +1000
+
+    Merge pull request #15 from celinero/fix/projects
+    
+    change images for projects component + create an overlay when project…
+
+commit a1dbb093e40cf67783497aa684ef4911652e2bd5
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 17 14:07:59 2021 +1000
+
+    change images for projects component + create an overlay when projects are hovered + update the larger spacing in blog.scss and projects + add a new screenshot of my Trello board
+
+commit 692a9542881948226d72585ac849881ea05f2cab
+Merge: f8e92ed 19f86de
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sat Apr 17 10:27:29 2021 +1000
+
+    Merge pull request #14 from celinero/fix/about
+    
+    update the content of about me component and create a new mixin for a…
+
+commit 19f86dedf00aa5b6df0424600fc983dfad2f7fb7
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 17 10:26:41 2021 +1000
+
+    update the content of about me component and create a new mixin for a larger spacing and apply it to experience and about partials in scss
+
+commit f8e92ed4e1c14551b5b4b53ba6da4b8217af4aa9
+Merge: 6a6780f 1585477
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sat Apr 17 10:00:14 2021 +1000
+
+    Merge pull request #13 from celinero/fix/experience
+    
+    update button mixin and padding in experience component + add comment…
+
+commit 15854771ca1e44f363fc706f2def0d80c339a234
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 17 09:58:58 2021 +1000
+
+    update button mixin and padding in experience component + add comments in index.html and scss
+
+commit 6a6780fc26beda577247df27f7281fa252888e54
+Merge: 1b4deb0 066a0b4
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Fri Apr 16 23:24:49 2021 +1000
+
+    Merge pull request #12 from celinero/fix/hero
+    
+    Fix/hero
+
+commit 066a0b4b7ea5b81a27e6d0c72a7a1885dd5f67e8
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Fri Apr 16 23:22:50 2021 +1000
+
+    fix the hover and padding in navbar
+
+commit 75efbe2f95e201d3c6166978ce12edddc5dd9d8e
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Fri Apr 16 23:07:39 2021 +1000
+
+    swap css with mixin for background-img
+
+commit e1bc2a81b697b79dcd382124e14fc1a9a43a20ce
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Fri Apr 16 23:02:04 2021 +1000
+
+    update hero component and background image in mixin, change sizes in typography, add new colors in variables, add a new Trello board
+
+commit 1b4deb08a8b1899897c768b54f43046abc79a03a
+Merge: c9450ed a456381
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Fri Apr 16 17:08:43 2021 +1000
+
+    Merge pull request #11 from celinero/fix/header
+    
+    Fix/header
+
+commit a4563816fa5ec859378fb614f57f66b9639ce499
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Fri Apr 16 17:04:56 2021 +1000
+
+    update navbar layout for mobile version and update balsamiq file
+
+commit 7f47217962fdecc09709bd769b860f92c8ad6c62
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Thu Apr 15 16:17:40 2021 +1000
+
+    change background-color, color and padding of header
+
+commit c9450ed7539f158490ed68391f76b416787d4a70
+Merge: e119607 e8d93a2
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Thu Apr 15 15:26:46 2021 +1000
+
+    Merge pull request #10 from celinero/feat/footer
+    
+    create a new branch feat/footer, add this section in index and style …
+
+commit e8d93a2593b6d0e910d9f7fe8121391df0cd8949
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Thu Apr 15 15:24:18 2021 +1000
+
+    create a new branch feat/footer, add this section in index and style it + update mixins, variables and color in typography + add logos and screenshots of my trello board in the folder docs.
+
+commit e1196078b8536f63c81d37112b7d4645e66dc6b9
+Merge: 899e50b 7628b8e
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Wed Apr 14 21:57:06 2021 +1000
+
+    Merge pull request #9 from celinero/feat/contact
+    
+    Feat/contact
+
+commit 7628b8ee8a061870f203dd6d554c36142df98b26
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Wed Apr 14 21:53:52 2021 +1000
+
+    clean html and css in contact section(swap to grid-template-areas) and run prettier on index.html
+
+commit 6c9221592e640455908dea9e7dcc7bb9e62756f1
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Wed Apr 14 17:00:13 2021 +1000
+
+    create new branch and partial in scss for feature contact + add section contact in index.html and style it + add a new mixin button and update hero.scss because it was impacted by this change + update comments in projects.scss
+
+commit 899e50bdf8aefe566a486724d75e29d4fd673a7b
+Merge: 0c27c82 e55892f
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Wed Apr 14 12:24:45 2021 +1000
+
+    Merge pull request #8 from celinero/feat/blog
+    
+    Feat/blog
+
+commit e55892f1bb3a104950810c905c91804855e5c29c
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Wed Apr 14 12:21:54 2021 +1000
+
+    update the five blog pages with a sidebar  and section blog in index and style it + add a new mixin background-img that is shared with section hero
+
+commit c53219e3d8decc7b703d023c854f77ffd7f538a2
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Tue Apr 13 22:52:28 2021 +1000
+
+    update my section blog in home page and blog-one page + add a new mixin + update my wireframe
+
+commit 44ebffc7b518ffd8fd4df5b5285e99036b9cb704
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Tue Apr 13 15:23:37 2021 +1000
+
+    create a new branch and section blog, add markup and style + create five new html page for blog posts and reajust the wirewframe + create a new mixin
+
+commit 0c27c82f2f120d9f192ad8e6de25206095325315
+Merge: cebfd17 eacdcaa
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Mon Apr 12 22:20:11 2021 +1000
+
+    Merge pull request #7 from celinero/feat/projects
+    
+    deletes unnecessary comments
+
+commit eacdcaa4ede98323d35f6470a3f618d856941445
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 12 22:18:13 2021 +1000
+
+    deletes unnecessary comments
+
+commit cebfd1717543fdae67a0be8d25168385175d4634
+Merge: 1159bbc 025e84e
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Mon Apr 12 22:12:39 2021 +1000
+
+    Merge pull request #6 from celinero/feat/projects
+    
+    Feat/projects
+
+commit 025e84e6ea646264c625f81d87c98ad54d9eeec0
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 12 22:09:47 2021 +1000
+
+    updates section projects: markup and style to make it responsive
+
+commit 171d4ed6d8d63ac511cc3ef436a53dafa073246c
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 12 21:31:36 2021 +1000
+
+    adds a new branch for feature Projects, creates it in index and styles it + adds images to illustrate my projects in folder docs
+
+commit 1159bbcf9a24c0ec3c7c3f00afa2ab09450b8181
+Merge: e6efb95 675bf32
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Mon Apr 12 12:26:25 2021 +1000
+
+    Merge pull request #5 from celinero/about
+    
+    forgot to save my index.html before commiting
+
+commit 675bf329cd68f84606562fe0b7a4f823b2926c7e
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 12 12:17:52 2021 +1000
+
+    forgot to save my index.html before commiting
+
+commit e6efb95cd5f5e84d313c8c29e5651df6ddc886bd
+Merge: 19b378b df7fd6a
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Mon Apr 12 12:14:04 2021 +1000
+
+    Merge pull request #4 from celinero/about
+    
+    About
+
+commit df7fd6a40eec3d82b116c10716864ad632afa04c
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 12 12:08:34 2021 +1000
+
+    update markup of section about and its style + update the wireframe + update Trello board
+
+commit 043b364d765a34d4c0f778ec00ec8049bc603a7e
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sun Apr 11 22:26:26 2021 +1000
+
+    create a new branch about, add html and style it
+
+commit 19b378bc52ed8dcf951a922b71092ac1d5d4fd53
+Merge: aa9f73b b91a4e7
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sun Apr 11 19:37:53 2021 +1000
+
+    Merge pull request #3 from celinero/feat/experience
+    
+    Feat/experience
+
+commit b91a4e7987bbf19b01c74099fc5d19d2ab3fb4f0
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sun Apr 11 19:20:41 2021 +1000
+
+    update the typography and make experience feature responsive
+
+commit 117a6edbfe3955f8f48128e0757e9575b0de6ad6
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sun Apr 11 16:33:22 2021 +1000
+
+    add and style experience feature
+
+commit aa9f73be5f96f6f96f41bed5c46cd39734dd0391
+Merge: daeb85f dd28fd5
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sat Apr 10 15:01:33 2021 +1000
+
+    Merge pull request #2 from celinero/feat/hero
+    
+    add and style section hero
+
+commit dd28fd58b94327c9407d202b0bd114c35156668c
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 10 14:54:03 2021 +1000
+
+    add and style section hero
+
+commit daeb85f97e19bc57f6532df6a7455826a07d4de5
+Merge: 29c0299 7d90d28
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Sat Apr 10 14:39:11 2021 +1000
+
+    Merge pull request #1 from celinero/feat/topbar
+    
+    Feat/topbar
+
+commit 7d90d2865bad4a4acd3928a4055535bf09fd850e
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 10 14:31:33 2021 +1000
+
+    add logo placeholder and align elements centre in topbar
+
+commit 34d823482923a29db87a83f98a8f857b488c0e2c
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 10 14:23:12 2021 +1000
+
+    add and style section topbar
+
+commit fef802febfcd17d51602bac4aad2a3958a725584
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 10 14:17:25 2021 +1000
+
+    create partials in scss and add mixins, typography and variables in it
+
+commit 9ef4e4266e375fdf35b9dcfdbea6a4d5162b917a
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 10 14:12:33 2021 +1000
+
+    add reset.scss
+
+commit 2a5030a804149d0a6a43da3e6fb0249767c20181
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Sat Apr 10 14:09:13 2021 +1000
+
+    add main.scss
+
+commit 29c0299944de8068e1398b594417d860ff9b0d2e
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Thu Apr 8 21:03:03 2021 +1000
+
+    deleted sergey library as html compiler is not allowed and modified Readme
+
+commit 143aa6d3a460464cd24149b4738ebfc26be7d836
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Wed Apr 7 22:26:04 2021 +1000
+
+    install sergey library
+
+commit 6d9d3458c8fc075c2a805101e4c415a309ff04a8
+Author: celinero <51786024+celinero@users.noreply.github.com>
+Date:   Wed Apr 7 21:38:02 2021 +1000
+
+    Initial commit
