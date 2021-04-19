@@ -11,14 +11,24 @@
     <!-- TOPBAR COMPONENT -->
     <header class="topbar">
       <div class="topbar__inner">
-        <!-- LOGO -->
-        <img
-          class="topbar__logo"
-          src="http://placekitten.com/g/75/75"
-          alt="celine's logo"
-        />
+        <div class="topbar__logo-wrapper">
+          <!-- LOGO -->
+          <img
+            class="topbar__logo"
+            src="http://placekitten.com/g/75/75"
+            alt="celine's logo"
+          />
+          <!-- HAMBURGER MENU -->
+          <button id="topbarMenu" class="topbar__menu">
+            <img
+              src="docs/Hamburger_icon.png"
+              alt="Hamburger icon"
+              width="24px"
+            />
+          </button>
+        </div>
         <!-- NAVIGATION BAR -->
-        <div class="navbar">
+        <div id="navbar" class="navbar navbar--hidden">
           <a href="index.html" class="topbar__navlink">Home</a>
           <a href="index.html#experience" class="topbar__navlink">Experience</a>
           <a href="index.html#about" class="topbar__navlink">About</a>
@@ -77,7 +87,7 @@
         </article>
         <!-- SIDEBAR -->
         <aside class="sidebar">
-          <h4 class="title--400">The last articles</h4>
+          <h4 class="title--400">Last articles</h4>
           <a href="blog-one.html">Blog post one</a>
           <a href="blog-two.html">Blog post two</a>
           <a href="blog-four.html">Blog post four</a>
@@ -103,5 +113,12 @@
         <div class="copyright">&copy; Copyright 2021 By Celine Roure</div>
       </div>
     </footer>
+    <script>
+      var menu = document.getElementById("topbarMenu");
+      var navbar = document.getElementById("navbar");
+      menu.addEventListener("click", function () {
+        navbar.classList.toggle("navbar--hidden");
+      });
+    </script>
   </body>
 </html>
