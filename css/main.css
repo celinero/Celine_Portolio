@@ -5,6 +5,7 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Open Sans", "Sans serif";
+  scroll-behavior: smooth;
 }
 
 .title--100 {
@@ -1061,5 +1062,34 @@
 
 .copyright {
   padding-top: 20px;
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 99;
+  width: 50px;
+  height: 50px;
+  outline: none;
+  border-radius: 50%;
+  border: 1px solid #334d4d;
+}
+
+.back-to-top:hover {
+  background-color: #fff;
+}
+
+.back_to_top-show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=main.css.map */
