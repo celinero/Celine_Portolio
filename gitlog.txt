@@ -1,3 +1,33 @@
+commit 689ae48804323670d615b4f82076ab33affe6a52
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Thu Apr 22 21:46:10 2021 +1000
+
+    add back to top functionality for each blog page and generate SRI
+
+commit 0407f7cffebf73de6d12c2e71c85ce0abb53f2c4
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Thu Apr 22 21:28:38 2021 +1000
+
+    move all the source code into a new folder src and move images in img folder so I have to renamed my links source and scss files
+
+commit 60c83df91542f780e8bcd450cb931e0d6963e4d5
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Wed Apr 21 23:09:46 2021 +1000
+
+    add a new partial to create a back to top button in js + add smooth scroll
+
+commit c1ffb740e762c38c9f0523f78f5dd31963517803
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 19 16:52:20 2021 +1000
+
+    update readme file, deploy my portfolio on netlify and add sitemap.xml
+
+commit 088c0f51dc2d8d70866c83bd62aa14187066b73a
+Author: celine.roure <celine.roure.pro@gmail.com>
+Date:   Mon Apr 19 14:14:31 2021 +1000
+
+    create the gitlog file
+
 commit 4555307901f2ee1dfc46bd7bc28527687a62097d
 Author: celine.roure <celine.roure.pro@gmail.com>
 Date:   Mon Apr 19 14:13:12 2021 +1000

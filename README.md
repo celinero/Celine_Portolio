@@ -63,6 +63,10 @@ You can see the progress of the project. I kept adding more cards while coding.
 
 ![Trello board 9](/Users/celineroure/Desktop/Celineroure__T1A2/docs/Trello/Screen Shot 2021-04-19 at 10.36.46 am.png)
 
+![Trello board 10](/Users/celineroure/Desktop/Celineroure__T1A2/docs/Trello/Screen Shot 2021-04-22 at 9.48.54 pm.png)
+
+
+
 ### Target audience
 
 Futur employers, recruiters
