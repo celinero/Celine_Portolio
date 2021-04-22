@@ -4,10 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/main.css"
+      integrity="sha512-AjWNF3CnIA/rOeSBDu8Fbmdr/es4nmvv1USYcKglKgHw1ICLiseg3N1X7sVspUcXmgEvnvM27BQSBiMhR2pFTQ=="
+    />
     <title>Portfolio</title>
   </head>
-  <body>
+
+  <body id="body">
     <!-- TOPBAR COMPONENT -->
     <header class="topbar">
       <div class="topbar__inner">
@@ -113,12 +119,32 @@
         <div class="copyright">&copy; Copyright 2021 By Celine Roure</div>
       </div>
     </footer>
+
+    <!-- BACK TO TOP BUTTON -->
+    <a class="back-to-top" id="back-to-top" href="#body"
+      ><img src="./img/arrow.png" alt="arrow"
+    /></a>
+
     <script>
       var menu = document.getElementById("topbarMenu");
       var navbar = document.getElementById("navbar");
       menu.addEventListener("click", function () {
         navbar.classList.toggle("navbar--hidden");
       });
+
+      var seeBtn = document.getElementById("back-to-top");
+      function trackScroll() {
+        var scrolled = window.pageYOffset;
+        var coords = document.documentElement.clientHeight;
+
+        if (scrolled > coords / 2) {
+          seeBtn.classList.add("back_to_top-show");
+        }
+        if (scrolled < coords / 2) {
+          seeBtn.classList.remove("back_to_top-show");
+        }
+      }
+      window.addEventListener("scroll", trackScroll);
     </script>
   </body>
 </html>
