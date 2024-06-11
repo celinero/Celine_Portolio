@@ -1,5 +1,3 @@
-# Celineroure__T1A2
-
 # My Portfolio
 
 [My portfolio](https://celine-roure-portfolio.netlify.app/)
