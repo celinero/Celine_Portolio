@@ -1,6 +1,6 @@
 .contact {
   @include spacing;
-  background-color: $color-tertiary;
+  // background-color: $color-tertiary;
 }
 
 .contact__inner {
@@ -26,6 +26,7 @@
     // height: 105px;
     width: 100%;
     padding: 10px;
+    background-color: $color-tertiary;
   }
 }
 
@@ -62,10 +63,12 @@
 
 .form__name {
   grid-area: name;
+  background-color: $color-tertiary;
 }
 
 .form__email {
   grid-area: email;
+  background-color: $color-tertiary;
 }
 
 .form__message {
